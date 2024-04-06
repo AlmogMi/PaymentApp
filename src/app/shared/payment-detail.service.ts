@@ -3,11 +3,11 @@ import { HttpClient } from "@angular/common/http";
 import { environment } from 'src/environments/environment.development';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class PaymentDetailService {
 
-  url: string = environment.apiBaseUrl + 'PaymentDetail';
+  url: string = environment.apiBaseUrl + '/PaymentDetail';
 
   constructor(private http:HttpClient) { }
 
